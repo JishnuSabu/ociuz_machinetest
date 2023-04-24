@@ -6,7 +6,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   await Hive.openBox("mybox");
-  runApp(MaterialApp(
+  runApp(
+      MaterialApp(
     debugShowCheckedModeBanner: false,
     home: RegisterationPage(),
   ));
